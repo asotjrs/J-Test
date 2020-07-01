@@ -1,0 +1,22 @@
+{
+  "name": "j-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asotjrs/J-Test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asotjrs/J-Test/issues"
+  },
+  "homepage": "https://github.com/asotjrs/J-Test#readme",
+  "devDependencies": {
+    "jest": "^26.1.0"
+  }
+}
