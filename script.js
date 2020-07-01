@@ -19,4 +19,4 @@ const res=(inp)=>{
     return filtered.length>3 ? filtered.slice(0,3):filtered;
 
 };
-console.log(res("cat"));
+console.log(res("cats"));
