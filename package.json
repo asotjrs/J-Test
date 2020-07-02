@@ -18,5 +18,8 @@
   "homepage": "https://github.com/asotjrs/J-Test#readme",
   "devDependencies": {
     "jest": "^26.1.0"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.0"
   }
 }
