@@ -11,12 +11,13 @@ const googleDB=[
 ];
 
 
-const res=(inp)=>{
+const res=(inp,db)=>{
 
-    const filtered=googleDB.filter(link=>{
+    const filtered=db.filter(link=>{
         return link.includes(inp);
     });
     return filtered.length>3 ? filtered.slice(0,3):filtered;
 
 };
-console.log(res("cats"));
+
+module.exports=res;
