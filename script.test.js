@@ -8,7 +8,22 @@ const mockDb=[
     "inpie.com"
 ];
 
-it('should test this google function',  ()=> {
-   // googleSearch("dog",mockDb)
-    expect(googleSearch("dogg",mockDb)).toEqual([]);
+describe("googleSearch",()=>{
+
+    it('should test this google function',  ()=> {
+        // googleSearch("dog",mockDb)
+        expect(googleSearch("dogg",mockDb)).toEqual([]);
+    });
+
+    it('works with undefined and null',  ()=> {
+        expect(googleSearch(undefined,mockDb)).toEqual([]);
+        expect(googleSearch(null,mockDb)).toEqual([]);
+    });
+
+    it('length would never be greater than 4',  ()=> {
+        expect(googleSearch(".com",mockDb).length).toEqual(3);
+
+    });
 });
+
+
