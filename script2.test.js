@@ -17,3 +17,20 @@ it('should call swapi to get ppl with a async',  ()=> {
 
 
 });
+
+it('should get ppl returns count and res',  ()=> {
+
+    const mockFetch=jest.fn().mockReturnValue(Promise.resolve(
+        {json: ()=>Promise.resolve({
+                count:82,
+                results:[0,1,2,3,4,5]
+            })}
+    ));
+
+        expect.assertions(2);
+        return getPeapole.getPeople(mockFetch).then(data=>{
+        expect(mockFetch.mock.calls.length).toBe(1);
+        expect(mockFetch).toBeCalledWith("https://swapi.dev/api/people");
+    })
+    
+}); 
